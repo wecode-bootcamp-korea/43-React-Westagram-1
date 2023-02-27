@@ -8,35 +8,12 @@
   margin: 0 auto;
 }
 
-@mixin initBorderStyle($position) {
-  @if ($position == 'top') {
-    border-top: 1px solid #d3d3d3;
-  } @else if($position == 'right') {
-    border-right: 1px solid #d3d3d3;
-  } @else if($position == 'bottom') {
-    border-bottom: 1px solid #d3d3d3;
-  } @else if($position == 'left') {
-    border-left: 1px solid #d3d3d3;
-  } @else if($position == 'all') {
-    border: 1px solid #d3d3d3;
-  }
-}
-
 //버튼으로 쓰여질 아이콘 초기설정
-@mixin btnForBackgroundIcon($url, $size) {
+@mixin btnForIcon($url, $size) {
   background-image: url($url);
   background-repeat: no-repeat;
   background-size: $size;
   background-color: transparent;
-  width: $size;
-  height: $size;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-@mixin btnForIcon($size) {
   width: $size;
   height: $size;
   border: 0;
@@ -57,54 +34,4 @@
   &:hover {
     cursor: pointer;
   }
-}
-
-@mixin flexCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-@mixin flexRowCenter {
-  display: flex;
-  align-items: center;
-}
-
-@mixin textStyle($font-size, $font-weight) {
-  font-size: $font-size;
-  font-weight: $font-weight;
-}
-
-@mixin proFile {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  margin: 1px 3px;
-}
-
-@mixin plusbutton {
-  border: 0;
-  outline: 0;
-  background-color: white;
-  margin-left: 5px;
-}
-
-@mixin grayborder {
-  border: 2px solid rgb(216, 216, 216);
-  background-color: white;
-}
-
-@mixin button {
-  border-color: white;
-  border-radius: 5px;
-  background-color: #acd7f8;
-  color: white;
-  font-size: 17px;
-  font-weight: bold;
-  outline: 0;
-  border: 0;
-  margin-top: 20px;
-  padding: 7px 0px 7px 7px;
-  width: 300px;
 }

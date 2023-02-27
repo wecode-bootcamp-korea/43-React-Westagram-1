@@ -1,8 +1,7 @@
-import Nav from 'components/Nav/Nav';
 import React from 'react';
 
 const MainJinpyeong = () => {
-  return <Nav />;
+  return <div>Main</div>;
 };
 
 export default MainJinpyeong;
