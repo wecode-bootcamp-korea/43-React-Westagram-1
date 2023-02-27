@@ -1,4 +1,21 @@
-@import '../../../styles/common.scss';
-@import '../../../styles/reset.scss';
-@import '../../../styles/mixin.scss';
-@import '../../../styles/variables.scss';
+@import '/src/styles/common.scss';
+@include globalStyles;
+
+.main {
+  .feeds {
+    padding: 50px 10%;
+  }
+  .story {
+    position: fixed;
+    float: right;
+    left: 60%;
+    top: 15%;
+  }
+
+  .recommend {
+    position: fixed;
+    float: right;
+    left: 60%;
+    top: 50%;
+  }
+}
