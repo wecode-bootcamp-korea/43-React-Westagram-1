@@ -1,0 +1,106 @@
+@import '/src/styles/mixin.scss';
+
+.intro {
+  @include flexCenter;
+  flex-direction: column;
+
+  div {
+    padding: 20px;
+  }
+  .title {
+    font-size: 64px;
+    font-family: 'Lobster', sans-serif;
+  }
+  .btn {
+    margin: 0 auto;
+    ul {
+      text-decoration-line: none;
+
+      li {
+        button {
+          width: 240px;
+          height: 60px;
+          margin: 10px 0px;
+
+          .link {
+            text-decoration: none;
+          }
+        }
+        .eb {
+          box-shadow: inset 0px 1px 0px 0px #fbafe3;
+          background: linear-gradient(to bottom, #ff5bb0 5%, #ef027d 100%);
+          background-color: #ff5bb0;
+          border-radius: 6px;
+          border: 1px solid #ee1eb5;
+          display: inline-block;
+          cursor: pointer;
+          color: #ffffff;
+          font-family: Arial;
+          font-size: 15px;
+          font-weight: bold;
+          padding: 6px 24px;
+          text-decoration: none;
+          text-shadow: 0px 1px 0px #c70067;
+        }
+        .eb:hover {
+          background: linear-gradient(to bottom, #ef027d 5%, #ff5bb0 100%);
+          background-color: #ef027d;
+        }
+        .eb:active {
+          position: relative;
+          top: 1px;
+        }
+
+        .mk {
+          box-shadow: inset 0px 1px 0px 0px #fce2c1;
+          background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+          background-color: #ffc477;
+          border-radius: 6px;
+          border: 1px solid #eeb44f;
+          display: inline-block;
+          cursor: pointer;
+          color: #ffffff;
+          font-family: Arial;
+          font-size: 15px;
+          font-weight: bold;
+          padding: 6px 24px;
+          text-decoration: none;
+          text-shadow: 0px 1px 0px #cc9f52;
+        }
+        .mk:hover {
+          background: linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+          background-color: #fb9e25;
+        }
+        .mk:active {
+          position: relative;
+          top: 1px;
+        }
+
+        .jp {
+          box-shadow: inset 0px 1px 0px 0px #bbdaf7;
+          background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+          background-color: #79bbff;
+          border-radius: 6px;
+          border: 1px solid #84bbf3;
+          display: inline-block;
+          cursor: pointer;
+          color: #ffffff;
+          font-family: Arial;
+          font-size: 15px;
+          font-weight: bold;
+          padding: 6px 24px;
+          text-decoration: none;
+          text-shadow: 0px 1px 0px #528ecc;
+        }
+        .jp:hover {
+          background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+          background-color: #378de5;
+        }
+        .jp:active {
+          position: relative;
+          top: 1px;
+        }
+      }
+    }
+  }
+}

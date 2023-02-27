@@ -1,6 +1,6 @@
 import React from 'react';
 import './MainJinpyeong.scss';
-import Nav from '../../../components/Nav/Nav';
+import Nav from 'components/Nav/Nav';
 import Feeds from './mainComponents/Feeds/FeedsJinpyeong';
 import Sidebar from './mainComponents/Sidebar/SidebarJinpyeong';
 
