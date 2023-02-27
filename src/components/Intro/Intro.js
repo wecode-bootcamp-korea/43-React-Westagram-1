@@ -9,25 +9,19 @@ const Intro = () => {
       <div className="btn">
         <ul>
           <li>
-            <button className="eb">
-              <Link className="link" to="/login-eunbin">
-                Eunbin Moon
-              </Link>
-            </button>
+            <Link className="link" to="/login-eunbin">
+              <button className="eb">Eunbin Moon</button>
+            </Link>
           </li>
           <li>
-            <button className="mk">
-              <Link className="link" to="/login-minkyung">
-                Minkyung Kim
-              </Link>
-            </button>
+            <Link className="link" to="/login-minkyung">
+              <button className="mk">Minkyung Kim</button>
+            </Link>
           </li>
           <li>
-            <button className="jp">
-              <Link className="link" to="/login-jipyeong">
-                Jinpyeong Kim
-              </Link>
-            </button>
+            <Link className="link" to="/login-jinpyeong">
+              <button className="jp">Jinpyeong Kim</button>
+            </Link>
           </li>
         </ul>
       </div>
