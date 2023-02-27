@@ -33,7 +33,7 @@ const LoginMinkyung = () => {
   // setId.includes('@') && pw.length > 4 ? setIsActive('active') : setIsActive('account') }
 
   return (
-    <div onKeyUp={check} className="loginminkyung">
+    <div className="loginminkyung">
       <form>
         <header className="logo">Westagram</header>
         <div className="container">
