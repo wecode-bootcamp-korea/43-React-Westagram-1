@@ -1,0 +1,235 @@
+@import '../../../styles/common.scss';
+@import '../../../styles/mixin.scss';
+
+.main {
+  border: 1px solid red;
+  p {
+    margin: 0px 5px;
+  }
+
+  #navCenter {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+
+    nav {
+      @include flexRowCenter;
+      background-color: white;
+      width: 1000px;
+      height: 70px;
+
+      .nav-leftTap,
+      .nav-centerTap {
+        flex: none;
+      }
+      .nav-centerTap {
+        position: relative;
+
+        .nav-centerTapGlass {
+          position: absolute;
+          top: 20%;
+          left: 55%;
+        }
+      }
+
+      #westagramLogo {
+        font-size: 35px;
+        margin: 10px;
+      }
+
+      .westagramtext {
+        font-size: 30px;
+        font-family: 'Lobster', cursive;
+      }
+
+      .fa-magnifying-glass {
+        font-size: 20px;
+        color: black;
+      }
+      .search {
+        background-color: rgb(243, 243, 243);
+        border: 2px solid rgb(216, 216, 216);
+        height: 30px;
+        text-align: center;
+        margin-left: 190px;
+        outline: none;
+      }
+
+      .nav-rightTap {
+        margin-left: auto;
+      }
+
+      .fa-compass,
+      .fa-heart,
+      .fa-user {
+        margin-left: 5px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .mainPage {
+    display: flex;
+    justify-content: center;
+
+    .feeds {
+      background-color: white;
+      margin-top: 50px;
+      border: 2px solid rgb(216, 216, 216);
+
+      .article {
+        border-bottom: 2px solid rgb(216, 216, 216);
+
+        .profile {
+          @include flexRowCenter;
+
+          .daramId {
+            font-weight: bold;
+          }
+
+          .fa-ellipsis {
+            margin-left: auto;
+            margin-right: 10px;
+          }
+
+          .profilePhoto {
+            @include proFile;
+          }
+          .profilePhoto,
+          .daramId {
+            flex: none;
+            margin-right: 10px;
+          }
+        }
+        .profilePhoto {
+          margin: 8px 0px 8px 12px;
+        }
+        .pictureUnderTap {
+          @include flexRowCenter;
+
+          .pictureUnderTapLeftSide {
+            flex: none;
+
+            .likeThisFeed {
+              background-color: white;
+              border: none;
+              padding: 0;
+            }
+          }
+          .feedsave {
+            margin-left: auto;
+          }
+
+          .minBefore {
+            margin-bottom: 10px;
+          }
+          .howManyLike {
+            @include flexRowCenter;
+            margin-top: 10px;
+
+            .howManyLikePicture {
+              width: 20px;
+              margin: auto 5px auto 10px;
+            }
+          }
+        }
+        .howManyLike {
+          @include flexRowCenter;
+          margin-top: 10px;
+
+          .howManyLikePicture {
+            width: 20px;
+            margin: auto 5px auto 10px;
+          }
+        }
+      }
+      .comment {
+        position: relative;
+        width: 450px;
+        height: 35px;
+        border: 0;
+        padding-left: 15px;
+        outline: none;
+      }
+
+      .commentbutton {
+        position: absolute;
+        width: 50px;
+        height: 35px;
+        color: rgb(24, 24, 248, 0.6);
+        @include plusbutton;
+        @include textStyle(16px, bold);
+      }
+    }
+    .main-right {
+      .main-rightMyProfile {
+        @include flexRowCenter;
+        margin-top: 50px;
+        margin-left: 20px;
+
+        .main-rightMyProfileImg {
+          width: 60px;
+          height: 60px;
+          border-radius: 100%;
+          margin-left: 12px;
+        }
+      }
+
+      .main-rightfriendPic {
+        @include proFile;
+      }
+
+      .friendStory,
+      .recomandFriendAll {
+        border: 2px solid rgb(216, 216, 216);
+        background-color: white;
+        width: 330px;
+        height: 250px;
+        margin: 8px 0px 15px 25px;
+        overflow: hidden;
+
+        .friendStorytext,
+        .recomandFriend {
+          @include flexRowCenter;
+          justify-content: space-between;
+          margin: 10px;
+        }
+
+        .main-rightfriendNameTime {
+          display: flex;
+          align-items: center;
+          margin: 10px 20px;
+
+          .main-rightfriendNameTimeP {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+      .recomandFriendAll {
+        height: 220px;
+
+        .main-rightRecomandFriendName {
+          display: flex;
+          margin: 10px 5px 10px 20px;
+
+          .main-rightRecomandFriendName_p {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .recomandFriendProfilePic {
+            @include proFile;
+          }
+          .followButton {
+            color: rgb(36, 169, 221);
+            @include plusbutton;
+            @include textStyle(16px, bold);
+          }
+        }
+      }
+      footer {
+        margin-left: 20px;
+      }
+    }
+  }
+}
