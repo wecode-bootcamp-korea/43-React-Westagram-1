@@ -6,13 +6,11 @@ import LoginEunbin from './pages/muneunbin/Login/LoginEunbin';
 import MainEunbin from './pages/muneunbin/Main/MainEunbin';
 import LoginMinkyung from './pages/kimminkyung/Login/LoginMinkyung';
 import MainMinkyung from './pages/kimminkyung/Main/MainMinkyung';
-import Intro from 'components/Intro/Intro';
 
 const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Intro />} />
         <Route path="/login-eunbin" element={<LoginEunbin />} />
         <Route path="/main-eunbin" element={<MainEunbin />} />
         <Route path="/login-minkyung" element={<LoginMinkyung />} />
