@@ -24,7 +24,7 @@ const Intro = () => {
           </li>
           <li>
             <button className="jp">
-              <Link className="link" to="/login-jipyeong">
+              <Link className="link" to="/login-jinpyeong">
                 Jinpyeong Kim
               </Link>
             </button>
