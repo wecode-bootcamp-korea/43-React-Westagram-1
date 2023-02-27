@@ -10,7 +10,7 @@ const Nav = () => {
     <div className="nav">
       <div className="home">
         <img className="imgHome" src={instaImg} alt="instagramLogo" />
-        <span className="txtHome">Westagram</span>
+        <span className="txtHome">Westagram !!</span>
       </div>
       <div className="search">
         <input className="txtSearch" type="text" placeholder="검색" />
