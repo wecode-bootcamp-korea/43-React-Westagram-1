@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 import './FeedsJinpyeong.scss';
-import feedImg from '../../../../../assets/kimjinpyeong/yoon.jpg';
+import feedImg from 'assets/kimjinpyeong/yoon.jpg';
+import moreImg from 'assets/kimjinpyeong/more.png';
 import Reply from './Reply/ReplyJinpyeong';
+import emptyHeartImg from 'assets/kimjinpyeong/emptyHeart.png';
+import fillHeartImg from 'assets/kimjinpyeong/fillHeart.png';
+import replyImg from 'assets/kimjinpyeong/chat.png';
+import shareImg from 'assets/kimjinpyeong/share.png';
+import bookmarkImg from 'assets/kimjinpyeong/bookmark.png';
 
 const Feeds = () => {
   const [isActive, setIsActive] = useState(false);
@@ -42,22 +48,38 @@ const Feeds = () => {
             <span className="txtTitleUserNickName">jinp1993</span>
           </div>
           <div className="boxTitleMoreWrapper">
-            <button className="btnTitleMoreIcon" />
+            <img src={moreImg} alt="더 보기" className="btnTitleMoreIcon" />
           </div>
         </section>
         <section className="boxMain">
           <img className="imgFeed" src={feedImg} alt="feedMainImg" />
           <div className="boxMainIconWrapper">
             <div className="boxPostsRelatedIcons">
-              <button
-                className={isActive ? 'btnFillHeartIcon' : 'btnHeartIcon'}
-                onClick={handleActive}
-              />
-              <button className="btnChatIcon" />
-              <button className="btnShareIcon" />
+              {!isActive ? (
+                <img
+                  className="btnHeartIcon"
+                  onClick={handleActive}
+                  src={emptyHeartImg}
+                  alt="emptyHeart"
+                />
+              ) : (
+                <img
+                  className="btnFillHeartIcon"
+                  onClick={handleActive}
+                  src={fillHeartImg}
+                  alt="fillHeart"
+                />
+              )}
+
+              <img src={replyImg} alt="reply" className="btnChatIcon" />
+              <img src={shareImg} alt="share" className="btnShareIcon" />
             </div>
             <div className="boxBookmark">
-              <button className="btnBookmarkIcon" />
+              <img
+                src={bookmarkImg}
+                alt="bookmark"
+                className="btnBookmarkIcon"
+              />
             </div>
           </div>
         </section>

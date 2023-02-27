@@ -29,7 +29,7 @@
       .boxTitleMoreWrapper {
         float: right;
         .btnTitleMoreIcon {
-          @include btnForIcon('../assets/kimjinpyeong/more.png', $large);
+          @include btnForIcon($large);
         }
       }
     }
@@ -49,7 +49,7 @@
 
           .btnHeartIcon {
             position: absolute;
-            @include btnForIcon(
+            @include btnForBackgroundIcon(
               '../assets/kimjinpyeong/emptyHeart.png',
               $large
             );
@@ -58,20 +58,20 @@
 
           .btnFillHeartIcon {
             position: absolute;
-            @include btnForIcon('../assets/kimjinpyeong/fillHeart.png', $large);
+            @include btnForIcon($large);
             width: $large;
           }
 
           .btnChatIcon {
             position: absolute;
-            @include btnForIcon('../assets/kimjinpyeong/chat.png', $large);
+            @include btnForIcon($large);
             width: $large;
             left: 30px;
           }
 
           .btnShareIcon {
             position: absolute;
-            @include btnForIcon('../assets/kimjinpyeong/share.png', $large);
+            @include btnForIcon($large);
             width: $large;
             left: 60px;
           }
@@ -83,7 +83,7 @@
 
           .btnBookmarkIcon {
             position: absolute;
-            @include btnForIcon('../assets/kimjinpyeong/bookmark.png', $large);
+            @include btnForIcon($large);
             width: $large;
             right: 5px;
           }
