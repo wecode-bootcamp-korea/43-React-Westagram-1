@@ -1,7 +1,8 @@
 import React from 'react';
-import './MainEunbin.scss';
+import Comment from './Comment/Comment';
+import './Main.scss';
 
-const MainEunbin = () => {
+const Main = () => {
   return (
     <div className="main">
       <div id="navCenter">
@@ -40,7 +41,7 @@ const MainEunbin = () => {
             </div>
 
             <img
-              src="src\assets\muneunbin\images\newfeed.jpg"
+              src="/images/newfeed.jpg"
               alt="게시 사진"
               className="feedPicture"
             />
@@ -80,11 +81,7 @@ const MainEunbin = () => {
               &nbsp;&nbsp;54분 전
             </p>
           </div>
-          <div id="commentpart" />
-          <input className="comment" type="text" placeholder="댓글 달기..." />
-          <button className="commentbutton">
-            <strong>게시</strong>
-          </button>
+          <Comment />
         </div>
 
         <div className="main-right">
@@ -255,4 +252,4 @@ const MainEunbin = () => {
   );
 };
 
-export default MainEunbin;
+export default Main;

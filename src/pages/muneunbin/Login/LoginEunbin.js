@@ -6,7 +6,6 @@ const LoginEunbin = () => {
   const [idData, setIdData] = useState('');
   const [pswData, setPswData] = useState('');
   const isWorkingBtn = idData.indexOf('@') !== -1 && pswData.length > 5;
-  // let [active, setActive] = useState(false);
 
   const idDataHandler = e => {
     setIdData(e.target.value);
