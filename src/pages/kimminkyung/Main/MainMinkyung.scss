@@ -1,0 +1,308 @@
+.mainminkyung {
+  margin: 0;
+
+  background-color: rgb(243, 243, 243);
+  /* height: 100vh; */
+
+  .nav_bar {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    background-color: white;
+    height: 100px;
+
+    .nav_left {
+      display: flex;
+      margin-left: 198px;
+      align-items: center;
+
+      img {
+        width: 47px;
+        height: inherit;
+      }
+
+      .insta_border {
+        border-left: 1.5px solid black;
+        margin-left: 13px;
+        height: 60%;
+
+        p {
+          padding-left: 18px;
+          font-size: 20px;
+          font-family: Lobster;
+          margin-top: 6px;
+        }
+      }
+    }
+    .nav_middle {
+      display: flex;
+      width: 187px;
+      align-items: center;
+
+      input {
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        background-color: #fefcfc;
+
+        &::placeholder {
+          text-align: center;
+        }
+      }
+    }
+
+    .nav_right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 263px;
+
+      .fa-regular {
+        font-size: 35px;
+      }
+
+      .fa-heart {
+        padding-right: 19px;
+      }
+
+      .fa-compass {
+        padding-right: 19px;
+      }
+    }
+  }
+  .feed_container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-top: 57px;
+
+    .feed {
+      border: 1px solid lightgray;
+      width: 45%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      margin-left: 215px;
+
+      .feed_top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 12px;
+
+        .feed_top_left {
+          display: flex;
+          align-items: center;
+          margin-left: 21px;
+
+          img {
+            width: 56px;
+            height: 49px;
+            border-radius: 50%;
+            margin-top: 10px;
+          }
+          .feed_id span {
+            padding-left: 11px;
+          }
+        }
+
+        .feed_top_right {
+          display: flex;
+          justify-content: flex-end;
+
+          .fa-caret-down {
+            padding-right: 20px;
+          }
+        }
+        .font-bold {
+          font-weight: bold;
+        }
+      }
+
+      .feed_main_img img {
+        width: 100%;
+        margin-top: 2px;
+      }
+      .feed_menu {
+        display: flex;
+        flex-direction: row;
+        margin-top: 14px;
+        justify-content: space-between;
+
+        .feed_menu_left {
+          display: flex;
+          flex-direction: row;
+
+          align-items: center;
+
+          .fa-heart {
+            font-size: 35px;
+            padding-left: 10px;
+            margin-right: -12px;
+          }
+
+          img {
+            width: 30px;
+          }
+
+          .fa-share-from-square {
+            font-size: 35px;
+            padding-left: 10px;
+          }
+        }
+      }
+      /* .feed_menu_left {
+  display: flex;
+  justify-content: start;
+} */
+      .feed_menu_right {
+        img {
+          width: 45px;
+          margin-left: 403px;
+          padding-right: 10px;
+        }
+      }
+      .feed_text {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 14px;
+        margin-top: 16px;
+
+        .like_img {
+          width: 30px;
+          height: 36px;
+          border-radius: 50%;
+        }
+        span {
+          padding-left: 5px;
+        }
+      }
+      .writing {
+        font-size: 14px;
+        margin-left: 10px;
+        margin-top: 19px;
+        display: flex;
+
+        .writing_text_div {
+          margin-right: 23px;
+        }
+        .more_text {
+          color: #6868689a;
+        }
+      }
+      .comment_ul {
+        list-style: none;
+        padding-left: 10px;
+      }
+      .text_tme {
+        margin-top: 10px;
+        margin-bottom: 14px;
+        padding-left: 9px;
+        font-size: 16px;
+        color: #52525291;
+      }
+      .comment_input_container {
+        border-top: 1px solid lightgray;
+        height: 52px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .comment_input_width {
+          width: 100%;
+          height: inherit;
+
+          .comment_input {
+            padding-left: 15px;
+            font-size: 16px;
+            border: none;
+            width: 100%;
+            height: inherit;
+
+            &::placeholder {
+              font-size: 16px;
+              color: #52525291;
+            }
+          }
+        }
+
+        .comment_btn_container {
+          display: flex;
+
+          .comment_btn {
+            width: 80px;
+            height: 30px;
+            background-color: white;
+            font-size: 16px;
+            font-weight: bold;
+            color: #b6dffa;
+            border: none;
+          }
+        }
+      }
+    }
+
+    /*right-article* 여기 하는 중*/
+    .feed_right_article {
+      display: flex;
+      flex-direction: column;
+
+      .right_article_img_id_wrapper {
+        display: flex;
+        margin-bottom: -37px;
+        justify-content: center;
+        align-items: center;
+        margin-left: -23px;
+
+        .right_article_img {
+          width: 45px;
+          height: 43px;
+          border-radius: 50%;
+        }
+      }
+
+      .right_id {
+        padding-left: 17px;
+
+        .comment_ul.type_cmt {
+          padding-left: 0;
+        }
+        p {
+          padding-left: 19px;
+          color: #52525291;
+          margin-top: 2px;
+        }
+      }
+      .right_article_follow {
+        color: blue;
+        font-weight: 600;
+      }
+
+      .second_story_div {
+        margin-left: 98px;
+        margin-top: 65px;
+        border: 1px solid lightgray;
+        padding: 34px 42px;
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+
+        .right_img_id_wrapper {
+          display: flex;
+          margin-top: 32px;
+        }
+
+        .second_wrapper {
+          margin-top: -34px;
+        }
+      }
+    }
+  }
+  // .active {
+  //   opacity: 3;
+  // }
+}
