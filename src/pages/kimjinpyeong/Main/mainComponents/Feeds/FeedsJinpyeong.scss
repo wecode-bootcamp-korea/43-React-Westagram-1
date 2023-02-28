@@ -1,6 +1,7 @@
 @import '/src/styles/common.scss';
 @import '/src/styles/variables.scss';
 @import '/src/styles/mixin.scss';
+@import '/src/pages/kimjinpyeong/responsiveJinpyeong.scss';
 
 .feeds {
   padding: 20px 40px 0px 40px;
@@ -160,6 +161,32 @@
           }
         }
       }
+    }
+  }
+}
+
+@include mobile {
+  .feeds {
+    .boxFeedContainer {
+      width: 300px;
+
+      .boxTop {
+        width: 280px;
+
+        .boxTitleWrapper {
+          .btnTitleUserIcon {
+            @include btnForUserIcon('../assets/kimjinpyeong/me.jpg', $large);
+          }
+        }
+        .txtTitleUserNickName {
+          padding-left: 5px;
+          font-size: $small;
+        }
+      }
+    }
+
+    .boxTop {
+      width: 300px;
     }
   }
 }

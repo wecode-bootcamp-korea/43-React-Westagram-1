@@ -38,6 +38,27 @@
         color: #d3d3d3;
       }
     }
+    .searchArea {
+      position: absolute;
+      background-color: white;
+      width: 100%;
+      z-index: 10;
+
+      .searchUserOne {
+        border: 1px solid black;
+        @include flexSort(center, center);
+
+        &:hover {
+          background-color: #d3d3d3;
+          cursor: pointer;
+        }
+
+        .searchUserIcon {
+          @include btnForUserIcon('../assets/common/emptyUser.png', $large);
+          margin: 5px;
+        }
+      }
+    }
   }
   .navList {
     ul {

@@ -1,4 +1,5 @@
 @import '/src/styles/common.scss';
+@import '/src/pages/kimjinpyeong/responsiveJinpyeong.scss';
 @include globalStyles;
 
 .main {
@@ -17,5 +18,21 @@
     float: right;
     left: 60%;
     top: 50%;
+  }
+}
+
+@include mobile {
+  .main {
+    padding: 10px;
+    .feeds {
+      padding: 10px;
+    }
+    .story {
+      display: none;
+    }
+
+    .recommend {
+      display: none;
+    }
   }
 }

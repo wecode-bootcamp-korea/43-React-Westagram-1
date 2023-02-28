@@ -6,8 +6,8 @@
 
 .login {
   @include flexSort(center, center);
-  width: 440px;
-  height: 450px;
+  width: 100%;
+  height: 100vh;
 
   //background-color: aquamarine;
 
@@ -81,7 +81,7 @@
 
   .boxIsSaveLoginInfo {
     margin: 5px 0px;
-    @include flexSort(start, center);
+    @include flexSort(none, center);
   }
 
   .boxLoginForm > div > input[type='checkbox'] {
