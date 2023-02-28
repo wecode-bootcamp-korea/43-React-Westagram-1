@@ -1,0 +1,53 @@
+@import '/src/styles/mixin.scss';
+@import '/src/styles/variables.scss';
+
+.nav {
+  @include flexSort(space-between, center);
+  background-color: white;
+  padding: 0px 15%;
+  height: 80px;
+  @include initBorderStyle(bottom);
+
+  .home {
+    @include flexCenter;
+    .imgHome {
+      @include btnForIcon($large);
+      margin: 20px;
+    }
+    .txtHome {
+      font-size: $large;
+      font-family: 'Lobster', sans-serif;
+      font-weight: 200;
+      padding: 10px;
+      border-left: 1px solid black;
+    }
+  }
+  .search {
+    position: relative;
+    .txtSearch {
+      @include btnForBackgroundIcon('../assets/common/search.png', $middle);
+      @include initBorderStyle(all);
+      background-color: #fefcfc;
+      background-position: 20%;
+      border-radius: 5px;
+      padding: 5px;
+      text-align: center;
+      width: 200px;
+
+      &::placeholder {
+        color: #d3d3d3;
+      }
+    }
+  }
+  .navList {
+    ul {
+      display: flex;
+      li {
+        padding: 10px;
+        img {
+          @include btnForIcon($large);
+        }
+      }
+    }
+  }
+}

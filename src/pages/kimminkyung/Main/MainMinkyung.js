@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import './MainMinkyung.scss';
-
+import CommentList from '../CommentList/CommentList';
 const MainMinkyung = () => {
+  const id = 'minngaeng';
+  const [comment, setComment] = useState('');
+  const [commentList, setCommentList] = useState([]);
+
   return (
     <div className="mainminkyung">
       <nav className="nav_bar">
@@ -79,10 +83,13 @@ const MainMinkyung = () => {
           </div>
           {/* <!--댓글 창--> */}
           <ul id="ul" className="comment_ul type_cmt">
-            <li>
-              <span className="font-bold">sr_amazon</span>
+            {commentList.map(text => {
+              return <CommentList id={id} comment={text} />;
+            })}
+            {/* <li>
+              <storng>sr_amazon</storng>
               <span>헤헷 내년에도 함께해! 🥰</span>
-            </li>
+            </li> */}
           </ul>
           {/* <!--3분 전--> */}
           <div className="text_tme">
@@ -90,23 +97,35 @@ const MainMinkyung = () => {
           </div>
           {/* <!--댓글 input--> */}
           <div className="comment_input_container">
-            <form>
-              <div className="comment_input_width">
-                <input
-                  id="input"
-                  className="comment_input"
-                  type="text"
-                  placeholder="댓글 달기..."
-                />
-              </div>
+            <div className="comment_input_width">
+              <input
+                id="input"
+                value={comment}
+                className="comment_input"
+                type="text"
+                placeholder="댓글 달기..."
+                onChange={e => {
+                  setComment(e.target.value);
+                }}
+              />
+            </div>
 
-              {/* <!--댓글 게시 버튼 --> */}
-              <div className="comment_btn_container">
-                <button id="button" type="button" className="comment_btn">
-                  게시
-                </button>
-              </div>
-            </form>
+            {/* <!--댓글 게시 버튼 --> */}
+            <div className="comment_btn_container">
+              <button
+                onClick={() => {
+                  let copy = [...commentList];
+                  copy.push(comment);
+                  setCommentList(copy);
+                  setComment('');
+                }}
+                id="button"
+                type="button"
+                className="comment_btn"
+              >
+                게시
+              </button>
+            </div>
           </div>
         </div>
         {/* <!--right article 1st div--> */}
