@@ -9,7 +9,8 @@ import replyImg from 'assets/kimjinpyeong/chat.png';
 import shareImg from 'assets/kimjinpyeong/share.png';
 import bookmarkImg from 'assets/kimjinpyeong/bookmark.png';
 
-const FeedsJinpyeong = () => {
+const FeedsJinpyeong = props => {
+  const { data } = props;
   const [isActive, setIsActive] = useState(false);
   const [reply, setReply] = useState('');
   const [replyArr, setReplyArr] = useState([]);

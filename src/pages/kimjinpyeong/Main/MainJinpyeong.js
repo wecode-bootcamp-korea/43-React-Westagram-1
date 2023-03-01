@@ -18,14 +18,13 @@ const MainJinpyeong = () => {
       .then(response => response.json())
       .then(data => setFeedData(data));
   }, []);
-  console.log(feedData);
+
   return (
     <div className="mainJinpyeong">
       <Nav userList={[...storyArr, ...recommendArr]} />
       <div className="feeds">
-        <Feeds />
-        <Feeds />
-        <Feeds />
+        {feedData &&
+          feedData.map((feed, index) => <Feeds key={index} data={feed} />)}
       </div>
       <div className="sidebar">
         <SidebarContainer storyArr={storyArr} recommendArr={recommendArr} />
