@@ -1,0 +1,22 @@
+@import '/src/styles/variables.scss';
+
+.sidebarContainerJinpyeong {
+  position: fixed;
+  left: 60%;
+  top: 20%;
+  width: 400px;
+
+  .story {
+    margin-bottom: 30px;
+  }
+
+  .recommend {
+    margin-bottom: 30px;
+  }
+
+  .bottom {
+    font-size: $small;
+    line-height: 24px;
+    color: #dedede;
+  }
+}

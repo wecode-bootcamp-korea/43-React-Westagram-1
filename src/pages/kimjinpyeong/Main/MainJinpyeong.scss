@@ -2,37 +2,17 @@
 @import '/src/pages/kimjinpyeong/responsiveJinpyeong.scss';
 @include globalStyles;
 
-.main {
+.mainJinpyeong {
   .feeds {
     padding: 50px 10%;
-  }
-  .story {
-    position: fixed;
-    float: right;
-    left: 60%;
-    top: 15%;
-  }
-
-  .recommend {
-    position: fixed;
-    float: right;
-    left: 60%;
-    top: 50%;
   }
 }
 
 @include mobile {
-  .main {
+  .mainJinpyeong {
     padding: 10px;
     .feeds {
       padding: 10px;
-    }
-    .story {
-      display: none;
-    }
-
-    .recommend {
-      display: none;
     }
   }
 }

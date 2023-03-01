@@ -2,7 +2,7 @@ import React from 'react';
 import './MainJinpyeong.scss';
 import Nav from 'components/Nav/Nav';
 import Feeds from './mainComponents/Feeds/FeedsJinpyeong';
-import Sidebar from './mainComponents/Sidebar/SidebarJinpyeong';
+import SidebarContainer from './mainComponents/Sidebar/SidebarContainer/SidebarContainerJinpyeong';
 
 const MainJinpyeong = () => {
   const storyArr = [];
@@ -12,18 +12,15 @@ const MainJinpyeong = () => {
     i < 5 ? storyArr.push(randomStr) : recommendArr.push(randomStr);
   }
   return (
-    <div className="main">
+    <div className="mainJinpyeong">
       <Nav userList={[...storyArr, ...recommendArr]} />
       <div className="feeds">
         <Feeds />
         <Feeds />
         <Feeds />
       </div>
-      <div className="story">
-        <Sidebar type="story" data={storyArr} />
-      </div>
-      <div className="recommend">
-        <Sidebar type="recommend" data={recommendArr} />
+      <div className="sidebar">
+        <SidebarContainer storyArr={storyArr} recommendArr={recommendArr} />
       </div>
     </div>
   );

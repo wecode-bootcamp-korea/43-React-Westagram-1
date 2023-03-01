@@ -2,7 +2,7 @@
 @import '/src/styles/variables.scss';
 @import '/src/styles/mixin.scss';
 
-.sidebar {
+.sidebarJinpyeong {
   .top {
     @include flexSort(space-between, center);
     width: 350px;
@@ -26,5 +26,8 @@
     * {
       margin: 20px 0;
     }
+  }
+  .bottom {
+    padding: 10px;
   }
 }

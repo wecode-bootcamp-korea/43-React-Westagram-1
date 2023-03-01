@@ -2,11 +2,11 @@ import React from 'react';
 import './SidebarJinpyeong.scss';
 import SidebarUser from './SidebarUser/SidebarUserJinpyeong';
 
-const Sidebar = props => {
+const SidebarJinpyeong = props => {
   const { type, data } = props;
 
   return (
-    <div className="sidebar">
+    <div className="sidebarJinpyeong">
       <div className="top">
         <span className="title">
           {type === 'story' ? '스토리' : '회원님을 위한 추천'}
@@ -22,4 +22,4 @@ const Sidebar = props => {
   );
 };
 
-export default Sidebar;
+export default SidebarJinpyeong;

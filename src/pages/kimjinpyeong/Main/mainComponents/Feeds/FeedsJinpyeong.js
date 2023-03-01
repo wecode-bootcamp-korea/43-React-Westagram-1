@@ -9,7 +9,7 @@ import replyImg from 'assets/kimjinpyeong/chat.png';
 import shareImg from 'assets/kimjinpyeong/share.png';
 import bookmarkImg from 'assets/kimjinpyeong/bookmark.png';
 
-const Feeds = () => {
+const FeedsJinpyeong = () => {
   const [isActive, setIsActive] = useState(false);
   const [reply, setReply] = useState('');
   const [replyArr, setReplyArr] = useState([]);
@@ -40,7 +40,7 @@ const Feeds = () => {
     setReply(e.target.value);
   };
   return (
-    <article className="feeds">
+    <article className="feedsJinpyeong">
       <div className="boxFeedContainer">
         <section className="boxTop">
           <div className="boxTitleWrapper">
@@ -139,4 +139,4 @@ const Feeds = () => {
   );
 };
 
-export default Feeds;
+export default FeedsJinpyeong;

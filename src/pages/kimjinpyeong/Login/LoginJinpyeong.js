@@ -33,7 +33,7 @@ const LoginJinpyeong = () => {
   };
 
   return (
-    <main className="login">
+    <main className="loginJinpyeong">
       <article className="boxContainer">
         <section className="boxCloseBtnArea">
           <button className="btnClose" />
