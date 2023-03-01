@@ -6,22 +6,30 @@ import deleteIcon from '../../../../../../assets/kimjinpyeong/delete.png';
 
 const ReplyJinpyeong = props => {
   const [isClickedGood, setIsClickedGood] = useState(false);
-  //reply => reply : "text", reply : cnt 의 형태로 전달 받음
-  const { reply, replyArr, setReplyArr } = props;
+
+  const { nickname, reply, replyArr, setReplyArr } = props;
 
   const handleHeart = () => {
     setIsClickedGood(!isClickedGood);
   };
 
-  const handleDelete = index => {
-    setReplyArr(replyArr.filter(item => item.replyCount !== index));
+  const handleDelete = (nickname, reply) => {
+    setReplyArr(
+      replyArr.filter(
+        replyOne =>
+          !(
+            nickname === Object.keys(replyOne)[0] &&
+            reply === Object.values(replyOne)[0]
+          )
+      )
+    );
   };
   return (
     <p className="replyJinpyeong">
       <span className="txtReplyId">
-        <b>jinp1993</b>&nbsp;
+        <b>{nickname}</b>&nbsp;
       </span>
-      {reply.reply}
+      {reply}
       <span className="btnGoodAndDelete">
         <img
           src={isClickedGood ? fillHeart : emptyHeart}
@@ -32,7 +40,7 @@ const ReplyJinpyeong = props => {
         <img
           src={deleteIcon}
           alt="delete"
-          onClick={() => handleDelete(reply.replyCount)}
+          onClick={() => handleDelete(nickname, reply)}
         />
       </span>
     </p>

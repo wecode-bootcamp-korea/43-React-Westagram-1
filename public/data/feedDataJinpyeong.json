@@ -7,7 +7,8 @@
       { "anonymous1": "이뻐요" },
       { "anonymous2": "성별이 무엇인가요?" },
       { "anonymous3": "몇 살이에요?" }
-    ]
+    ],
+    "user": "jinp1993"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
       { "anonymous4": "어디서 찍은건가요?" },
       { "anonymous5": "애기도 커피 마시나요?" },
       { "anonymous2": "유모차 어디껀가요?" }
-    ]
+    ],
+    "user": "jinp1993"
   },
   {
     "id": 3,
@@ -26,17 +28,18 @@
     "replyArr": [
       { "anonymous1": "맞으면 아픈가요?" },
       { "anonymous4": "솜주먹 ㅋㅋ" }
-    ]
+    ],
+    "user": "jinp1993"
   },
   {
     "id": 4,
     "img_url": "tummyTime.jpg",
     "contents": "터미타임 으쌰!",
     "replyArr": [
-      { "anonymous3": "맞으면 아픈가요?" },
       { "anonymous8": "곧 뒤집겠네요 ㅎㅎ" },
       { "anonymous7": "얼마나 버티나요?" },
-      { "anonymous1": "터미타임 잘 훈련시키면 트름도 알아서 잘 해요! ㅎㅎ" }
-    ]
+      { "anonymous1": "잘 훈련시키면 트름도 알아서 잘 해요! ㅎㅎ" }
+    ],
+    "user": "jinp1993"
   }
 ]

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './FeedsJinpyeong.scss';
-import feedImg from 'assets/kimjinpyeong/yoon.jpg';
 import moreImg from 'assets/kimjinpyeong/more.png';
 import Reply from './Reply/ReplyJinpyeong';
 import emptyHeartImg from 'assets/kimjinpyeong/emptyHeart.png';
@@ -11,11 +10,11 @@ import bookmarkImg from 'assets/kimjinpyeong/bookmark.png';
 
 const FeedsJinpyeong = props => {
   const { data } = props;
+  const user = data.user;
   const [isActive, setIsActive] = useState(false);
   const [reply, setReply] = useState('');
-  const [replyArr, setReplyArr] = useState([]);
+  const [replyArr, setReplyArr] = useState(data.replyArr);
   const [openReply, setOpenReply] = useState(false);
-  const [replyCount, setReplyCount] = useState(0);
 
   const handleActive = () => {
     setIsActive(isActive => !isActive);
@@ -23,16 +22,14 @@ const FeedsJinpyeong = props => {
 
   const handleKeyDown = e => {
     if (e.key === 'Enter' && reply) {
-      setReplyArr([...replyArr, { reply, replyCount }]);
-      setReplyCount(replyCount + 1);
+      setReplyArr([...replyArr, { [user]: reply }]);
       setReply('');
     }
   };
 
   const handleClick = () => {
     if (reply) {
-      setReplyArr([...replyArr, { reply, replyCount }]);
-      setReplyCount(replyCount + 1);
+      setReplyArr([...replyArr, { [user]: reply }]);
       setReply('');
     }
   };
@@ -40,20 +37,25 @@ const FeedsJinpyeong = props => {
   const handleChange = e => {
     setReply(e.target.value);
   };
+
   return (
     <article className="feedsJinpyeong">
       <div className="boxFeedContainer">
         <section className="boxTop">
           <div className="boxTitleWrapper">
             <button className="btnTitleUserIcon" />
-            <span className="txtTitleUserNickName">jinp1993</span>
+            <span className="txtTitleUserNickName">{data.user}</span>
           </div>
           <div className="boxTitleMoreWrapper">
             <img src={moreImg} alt="더 보기" className="btnTitleMoreIcon" />
           </div>
         </section>
         <section className="boxMain">
-          <img className="imgFeed" src={feedImg} alt="feedMainImg" />
+          <img
+            className="imgFeed"
+            src={require(`/src/assets/kimjinpyeong/${data.img_url}`)}
+            alt="feedMainImg"
+          />
           <div className="boxMainIconWrapper">
             <div className="boxPostsRelatedIcons">
               {!isActive ? (
@@ -89,12 +91,12 @@ const FeedsJinpyeong = props => {
             <div className="boxHowManyGood">
               <button className="btnMainUserIcon" />
               <span className="txtMainUserNickName">
-                jinp1993님이 좋아합니다.
+                {data.user}님이 좋아합니다.
               </span>
             </div>
           )}
           <p className="boxContents">
-            <b>yoon_1216</b>&nbsp; 이얍
+            <b>{data.user}</b>&nbsp; {data.contents}
           </p>
 
           <div className="boxReplyWrapper">
@@ -112,10 +114,12 @@ const FeedsJinpyeong = props => {
               )}
 
               <div className={`reply ${openReply}`}>
-                {replyArr.map(reply => (
+                {replyArr.map((reply, index) => (
                   <Reply
-                    reply={reply}
-                    key={reply.replyCount}
+                    user={user}
+                    nickname={Object.keys(reply)[0]}
+                    reply={Object.values(reply)[0]}
+                    key={index}
                     replyArr={replyArr}
                     setReplyArr={setReplyArr}
                   />
