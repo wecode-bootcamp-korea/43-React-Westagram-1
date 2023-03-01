@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "img_url": "yoon.jpg",
+    "contents": "저는 김윤이에욧!",
+    "replyArr": [
+      { "anonymous1": "이뻐요" },
+      { "anonymous2": "성별이 무엇인가요?" },
+      { "anonymous3": "몇 살이에요?" }
+    ]
+  },
+  {
+    "id": 2,
+    "img_url": "family.jpg",
+    "contents": "윤이네 가족사진!",
+    "replyArr": [
+      { "anonymous4": "어디서 찍은건가요?" },
+      { "anonymous5": "애기도 커피 마시나요?" },
+      { "anonymous2": "유모차 어디껀가요?" }
+    ]
+  },
+  {
+    "id": 3,
+    "img_url": "punch.jpg",
+    "contents": "아빠 때찌!",
+    "replyArr": [
+      { "anonymous1": "맞으면 아픈가요?" },
+      { "anonymous4": "솜주먹 ㅋㅋ" }
+    ]
+  },
+  {
+    "id": 4,
+    "img_url": "tummyTime.jpg",
+    "contents": "터미타임 으쌰!",
+    "replyArr": [
+      { "anonymous3": "맞으면 아픈가요?" },
+      { "anonymous8": "곧 뒤집겠네요 ㅎㅎ" },
+      { "anonymous7": "얼마나 버티나요?" },
+      { "anonymous1": "터미타임 잘 훈련시키면 트름도 알아서 잘 해요! ㅎㅎ" }
+    ]
+  }
+]
