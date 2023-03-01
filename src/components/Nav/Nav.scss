@@ -10,10 +10,12 @@
 
   .home {
     @include flexCenter;
+
     .imgHome {
       @include btnForIcon($large);
       margin: 20px;
     }
+
     .txtHome {
       font-size: $large;
       font-family: 'Lobster', sans-serif;
@@ -22,6 +24,7 @@
       border-left: 1px solid black;
     }
   }
+
   .search {
     position: relative;
     .txtSearch {
@@ -38,6 +41,7 @@
         color: #d3d3d3;
       }
     }
+
     .searchArea {
       position: absolute;
       background-color: white;
@@ -60,6 +64,7 @@
       }
     }
   }
+
   .navList {
     ul {
       display: flex;
