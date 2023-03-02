@@ -23,8 +23,7 @@ const MainJinpyeong = () => {
     <div className="mainJinpyeong">
       <Nav userList={[...storyArr, ...recommendArr]} />
       <div className="feeds">
-        {feedData &&
-          feedData.map((feed, index) => <Feeds key={index} data={feed} />)}
+        {feedData && feedData.map(feed => <Feeds key={feed.id} data={feed} />)}
       </div>
       <div className="sidebar">
         <SidebarContainer storyArr={storyArr} recommendArr={recommendArr} />
