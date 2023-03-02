@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import './Nav.scss';
 import instaImg from 'assets/common/instagram.png';
 import compassImg from 'assets/common/compass.png';
 import emptyHeartImg from 'assets/common/emptyHeart.png';
 import profileImg from 'assets/common/account.png';
+import './Nav.scss';
 
 const Nav = props => {
   const { userList } = props;

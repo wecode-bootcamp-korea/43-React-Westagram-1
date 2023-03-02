@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './ReplyJinpyeong.scss';
 import emptyHeart from '../../../../../../assets/kimjinpyeong/emptyHeart.png';
 import fillHeart from '../../../../../../assets/kimjinpyeong/fillHeart.png';
 import deleteIcon from '../../../../../../assets/kimjinpyeong/delete.png';
+import './ReplyJinpyeong.scss';
 
 const ReplyJinpyeong = props => {
   const [isClickedGood, setIsClickedGood] = useState(false);

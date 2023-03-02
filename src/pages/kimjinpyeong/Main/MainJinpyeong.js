@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import './MainJinpyeong.scss';
-import Nav from 'components/Nav/Nav';
 import Feeds from './mainComponents/Feeds/FeedsJinpyeong';
 import SidebarContainer from './mainComponents/Sidebar/SidebarContainer/SidebarContainerJinpyeong';
+import Nav from 'components/Nav/Nav';
+import './MainJinpyeong.scss';
 
 const MainJinpyeong = () => {
   const [feedData, setFeedData] = useState([]);

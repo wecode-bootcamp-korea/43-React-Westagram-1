@@ -1,6 +1,6 @@
 import React from 'react';
-import './SidebarJinpyeong.scss';
 import SidebarUser from './SidebarUser/SidebarUserJinpyeong';
+import './SidebarJinpyeong.scss';
 
 const SidebarJinpyeong = props => {
   const { type, data } = props;

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import './FeedsJinpyeong.scss';
-import moreImg from 'assets/kimjinpyeong/more.png';
 import Reply from './Reply/ReplyJinpyeong';
+import moreImg from 'assets/kimjinpyeong/more.png';
 import emptyHeartImg from 'assets/kimjinpyeong/emptyHeart.png';
 import fillHeartImg from 'assets/kimjinpyeong/fillHeart.png';
 import replyImg from 'assets/kimjinpyeong/chat.png';
 import shareImg from 'assets/kimjinpyeong/share.png';
 import bookmarkImg from 'assets/kimjinpyeong/bookmark.png';
+import './FeedsJinpyeong.scss';
 
 const FeedsJinpyeong = props => {
   const { data } = props;
