@@ -190,3 +190,27 @@
     }
   }
 }
+
+@include desktop {
+  .feedsJinpyeong {
+    .boxFeedContainer {
+      width: 400px;
+
+      .boxTop {
+        width: 400px;
+      }
+    }
+  }
+}
+
+@include laptop {
+  .feedsJinpyeong {
+    .boxFeedContainer {
+      width: 320px;
+
+      .boxTop {
+        width: 320px;
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 @import '/src/styles/variables.scss';
+@import '/src/pages/kimjinpyeong/responsiveJinpyeong.scss';
 
 .sidebarContainerJinpyeong {
   position: fixed;
@@ -18,5 +19,25 @@
     font-size: $small;
     line-height: 24px;
     color: #dedede;
+  }
+}
+
+@include desktop {
+  .sidebarContainerJinpyeong {
+    width: 320px;
+
+    .bottom {
+      width: 320px;
+    }
+  }
+}
+
+@include laptop {
+  .sidebarContainerJinpyeong {
+    width: 280px;
+
+    .bottom {
+      width: 280px;
+    }
   }
 }

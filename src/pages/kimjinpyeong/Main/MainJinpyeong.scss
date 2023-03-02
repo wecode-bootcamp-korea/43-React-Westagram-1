@@ -7,12 +7,3 @@
     padding: 50px 10%;
   }
 }
-
-@include mobile {
-  .mainJinpyeong {
-    padding: 10px;
-    .feeds {
-      padding: 10px;
-    }
-  }
-}
