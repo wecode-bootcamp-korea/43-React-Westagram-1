@@ -1,0 +1,22 @@
+@import '/src/styles/common.scss';
+@import '/src/styles/variables.scss';
+@import '/src/styles/mixin.scss';
+
+.replyJinpyeong {
+  .txtReplyId {
+    float: left;
+  }
+  .btnGoodAndDelete {
+    float: right;
+
+    img {
+      margin: 0px 10px;
+      width: $small;
+      height: $small;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

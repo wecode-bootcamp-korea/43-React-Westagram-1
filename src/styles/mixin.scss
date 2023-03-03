@@ -59,6 +59,11 @@
   }
 }
 
+@mixin btnStyleRemove {
+  border: none;
+  background-color: transparent;
+}
+
 @mixin flexCenter {
   display: flex;
   justify-content: center;

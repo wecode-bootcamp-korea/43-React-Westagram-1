@@ -1,0 +1,9 @@
+@import '/src/styles/common.scss';
+@import '/src/pages/kimjinpyeong/responsiveJinpyeong.scss';
+@include globalStyles;
+
+.mainJinpyeong {
+  .feeds {
+    padding: 50px 10%;
+  }
+}
